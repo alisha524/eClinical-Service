@@ -71,7 +71,7 @@ nav ul li a {
   color: black;
 }
 .heropage {
-  background: url(https://hitinfrastructure.com/images/site/article_headers/_normal/health_IT_infrastructure.jpg);
+  background: url(https://d9v4h7ffge8st.cloudfront.net/en/~/media/Images/Stock%20Photos/Sick-patient-on-video-call-with-doctor.jpg?h=1280&la=en&w=1810);
   background-size: cover;
   min-height: 1000px;
   background-attachment: fixed;
@@ -141,6 +141,72 @@ nav ul li a {
 
 .accordion li.active .accordion__content > * {
     font-size: 15px;
+}
+      .health-related-diseases div{
+        box-sizing: inherit;
+        padding-top: 65px;
+      }
+      .health-related-diseases-content{
+        display: list-item;
+        font-family: "Source Sans Pro",Verdana,sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.67;
+        text-align: webkit-match-parent;
+      }
+    * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }</style>
   </head>
   <body>
@@ -156,70 +222,59 @@ nav ul li a {
           
         </div>
       </div>
-       <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-5">
-                        <h2 class="h1">Frequently Asked Questions</h2>
-                        <hr>
-                    </div>
-
-                    <div class="col-12 col-md-7">
-                        <ul class="accordion accordion-1">
-                            <li>
-                                <div class="accordion__title"> <span class="h5"><p>Question?</p></span> </div>
-                                <div class="accordion__content">
-                                    <p>Answer</p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="accordion__title"> <span class="h5"><p>Question?</p></span> </div>
-                                <div class="accordion__content">
-                                    <p>Answer</p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="accordion__title"> <span class="h5"><p>Question?</p></span> </div>
-                                <div class="accordion__content">
-                                    <p>Answer</p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="accordion__title"> <span class="h5"><p>Question?</p></span> </div>
-                                <div class="accordion__content">
-                                    <p>Answer</p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="accordion__title"> <span class="h5"><p>Question?</p></span> </div>
-                                <div class="accordion__content">
-                                    <p>Answer</p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="accordion__title"> <span class="h5"><p>Question?</p></span> </div>
-                                <div class="accordion__content">
-                                    <p>Answer</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
+      <div class="covid-19">
+        <h3>CORONAVIRUS IN CONTEXT</h3>
+        <div class="video-content">
+          <ul>
+            <li class="type-video"><a href="https://www.webmd.com/coronavirus-in-context/video/mary-prunicki">
+</a>          </ul>
+        </div>
+    </li>
+      </div>
+      <div class="health-related-diseases">
+        <div class="health-related-diseases-header">HEALTH A-Z</div>
+        <div class="health-related-diseases-content">
+          <ul>
+            <li>Allergies</li>
+            <li>Back Pain</li>
+            <li>Cancer</li>
+            <li>Cold,Cough,FLu</li>
+            
+          </ul>
+        </div>
+      </div>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/w3images/map.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
     </div>
 
     <!--REPLACEABLE CONTENT ABOVE-->
 </div>
-  </body>
-</html>
-
+  </bo
 
 
